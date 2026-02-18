@@ -1,0 +1,55 @@
+body {
+   background-color: #f1ffef;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+   color: rgb(48, 125, 54);
+}
+
+header {
+   font-family: "Chilanka", cursive;
+}
+
+header h2 {
+   color: #33ae68;
+}
+
+h3,
+h4,
+h5 {
+   margin: 0px;
+}
+
+main h2 {
+   color: #8ede83;
+}
+
+main h3 {
+   margin-top: 25px;
+}
+
+main a {
+   color: #33ae68;
+}
+
+main a:hover {
+   color: #ae3333;
+}
+
+#wrapper {
+   background-color: #e1fbde;
+   width: 80%;
+   margin: 0px auto;
+   padding: 1%;
+}
+
+main,
+nav,
+footer {
+   font-family: "Short Stack", cursive;
+}
+
+.copyright {
+   color: rgb(48, 125, 54);
+}
