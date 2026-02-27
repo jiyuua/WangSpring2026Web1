@@ -1,18 +1,28 @@
+:root {
+   --mint: #c3e1d0;
+   --coral: #eb827a;
+   --desaturated-green: #789b87;
+   --text-color: #3d4742;
+   --light-blue: #e0f0ff;
+}
 body {
-   background-color: #f1ffef;
+   background-color: #704844;
    font-family: Arial, Helvetica, sans-serif;
+   background-image: url("images/image1.jpg");
+   background-size: cover;
 }
 
 h1 {
-   color: rgb(48, 125, 54);
+   color: #3d4742;
 }
 
 header {
    font-family: "Chilanka", cursive;
+   text-align: center;
 }
 
 header h2 {
-   color: #33ae68;
+   color: #3d4742;
 }
 
 h3,
@@ -22,7 +32,11 @@ h5 {
 }
 
 main h2 {
-   color: #8ede83;
+   color: #3d4742;
+   padding: 6px;
+   border-top: 10px dotted #eb827a;
+   border-bottom: 10px dotted #eb827a;
+   margin: 0px 0px 0px 0px;
 }
 
 main h3 {
@@ -34,22 +48,78 @@ main a {
 }
 
 main a:hover {
-   color: #ae3333;
+   color: #eb827a;
 }
 
 #wrapper {
-   background-color: #e1fbde;
+   background-color: #e0f0ff;
    width: 80%;
    margin: 0px auto;
    padding: 1%;
+   border-radius: 50px;
 }
 
 main,
 nav,
 footer {
    font-family: "Short Stack", cursive;
+   padding: 10px;
+   margin: 15px;
+}
+
+nav,
+footer {
+   border-radius: 50px;
+   border: 5px solid #789b87;
+}
+
+nav {
+   text-align: center;
+   font-size: 20px;
+   background-color: #c3e1d0;
+}
+
+nav a {
+   padding: 15px;
+}
+
+nav a:hover {
+   color: #eb827a;
 }
 
 .copyright {
-   color: rgb(48, 125, 54);
+   color: #eb827a;
+   font-size: 20px;
+   padding-left: 25px;
+}
+
+div.img-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   padding: 20px;
+}
+
+div.img-container img {
+   max-width: 300px;
+   margin: 10px;
+   padding: 10px;
+   border: 5px double #eb827a;
+   border-radius: 5px;
+   background-image: url("images/image1.jpg");
+   background-size: cover;
+}
+
+footer {
+   text-align: center;
+   font-size: 20px;
+   background-color: #c3e1d0;
+}
+
+.references a {
+   padding: 15px;
+}
+
+.references a:hover {
+   color: #eb827a;
 }
