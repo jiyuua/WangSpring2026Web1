@@ -1,0 +1,104 @@
+html {
+   box-sizing: border-box;
+   background-image: url("images/bg.png");
+   background-size: cover;
+}
+
+*,
+*:before,
+*:after {
+   box-sizing: inherit;
+}
+
+body {
+   padding: 0px;
+   margin: 0px;
+   font-family: "Short Stack", cursive;
+}
+
+a {
+   color: rgb(6, 9, 65);
+   text-decoration: none;
+}
+
+a:hover {
+   color: rgb(184, 235, 255);
+}
+
+p {
+   line-height: 2;
+   color: rgb(2, 50, 2);
+}
+ul {
+   list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+footer {
+   text-transform: uppercase;
+   text-align: center;
+   color: rgb(66, 122, 65);
+}
+
+.img-div {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 5px;
+}
+
+.img-div img:hover {
+   transform: scale(1.05);
+   transition: transform 0.3s ease;
+}
+
+.wrapper {
+   background: rgb(187, 215, 153);
+   display: grid;
+   grid-template-columns: repeat(12, minmax(0, 1fr));
+   width: 80%;
+   margin: 0 auto;
+}
+
+.wrapper > * {
+   padding: 15px;
+}
+
+header {
+   grid-column: 1 / 13;
+   background-color: rgb(254, 255, 224);
+   font-family: "Sour Gummy", sans-serif;
+}
+
+nav {
+   /* background-color: rgb(246, 236, 255); */
+   background-image: url("images/bg2.png");
+   background-size: cover;
+   grid-column: 1 / 4;
+}
+
+main {
+   background-color: rgb(217, 220, 255);
+   grid-column: 4 / 10;
+}
+
+aside {
+   background-image: url("images/bg2.png");
+   background-size: cover;
+   grid-column: 10 / 13;
+}
+
+main,
+nav,
+aside {
+   grid-row: 2 / 4;
+}
+
+footer {
+   background-color: rgb(254, 255, 224);
+   grid-column: 1 / 13;
+}
