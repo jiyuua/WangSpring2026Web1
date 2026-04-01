@@ -18,63 +18,81 @@ body {
 }
 
 a {
-   color: rgb(6, 9, 65);
+   color: #3b4cca;
    text-decoration: none;
 }
 
 a:hover {
-   color: rgb(184, 235, 255);
+   color: #d92727;
 }
 
 p {
-   line-height: 2;
-   color: rgb(2, 50, 2);
+   color: #023202;
+   font-size: 20px;
+   padding: 5px;
 }
 
 ul {
    list-style-type: none;
 }
 
-li:hover {
-   list-style-type: disc;
-}
-
-li::marker {
-   color: rgb(184, 235, 255);
-}
-
 .nav-animation ul {
    display: flex;
    justify-content: center;
    gap: 30px;
+   line-height: 0px;
 }
 
 .nav-animation li:hover {
    list-style-type: none;
 }
-
+.hoverp {
+   display: none;
+   font-size: 20px;
+}
+.hide-p:hover .hoverp {
+   display: block;
+}
 h1,
 h2,
 h3,
 footer {
    text-transform: uppercase;
    text-align: center;
-   color: rgb(66, 122, 65);
+   color: #427a41;
 }
 
 nav {
    display: flex;
    justify-content: center;
+
    gap: 50px;
 }
+
+.nav-style ul {
+   background-image: url("images/wood.webp");
+   background-size: cover;
+   text-align: center;
+   padding: 5px;
+   margin: 45px;
+   width: 600px;
+}
+
+footer {
+   bottom: 0;
+   font-size: 20px;
+   line-height: 2px;
+   text-align: center;
+}
+
 .header-div {
    font-family: "Pokemon Solid", sans-serif;
    text-align: center;
 
-   color: rgb(255, 222, 0);
+   color: #ffde00;
 
    /* direction, blur, color */
-   text-shadow: 0 10px 8px rgb(28, 21, 99);
+   text-shadow: 0 10px 8px #1c1563;
    margin: 0;
    gap: 0px;
    padding: 2px;
@@ -89,6 +107,7 @@ nav {
    -webkit-text-stroke: 8px #3b4cca;
    letter-spacing: 5px;
    margin: 0;
+   padding-bottom: 5px;
 }
 
 .header-div h4 {
@@ -132,8 +151,73 @@ nav {
 
 .footer-fadein {
    bottom: 0;
-   font-size: 30px;
+   font-size: 25px;
    line-height: 2px;
    margin-top: 375px;
    text-align: center;
+}
+
+/* flicker animation */
+@keyframes flicker {
+   0% {
+      background-image: url(images/bulbasaur.png);
+      width: 300px;
+      margin: 0 auto;
+   }
+   50% {
+      background-image: url(images/02.png);
+      margin: 0 auto;
+   }
+   100% {
+      background-image: url(images/03.png);
+      margin: 0 auto;
+   }
+}
+
+.flicker-animation {
+   width: 400px;
+   height: 400px;
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+
+   animation-name: flicker;
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
+}
+
+/* dancing */
+@keyframes dancing {
+   0% {
+      transform: translateX(-200px);
+   }
+   25% {
+      transform: scaleX(-1);
+   }
+   50% {
+      transform: translateX(200px);
+   }
+   75% {
+      transform: scaleX(-1);
+   }
+   100% {
+      transform: translateX(-200px);
+   }
+}
+
+.dancing-animation {
+   width: 400px;
+   height: 400px;
+   position: relative;
+   animation-name: dancing;
+   margin: 0 auto;
+}
+
+.dancing-animation:hover {
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+}
+
+.bg-squirtle {
+   background-color: #6c96da;
 }
